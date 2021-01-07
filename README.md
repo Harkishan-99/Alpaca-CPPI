@@ -11,20 +11,6 @@ pip install -r requirements.txt
 ```
 ## Usage
 
-### Research Notebook
-
-The research [notebook](https://github.com/Harkishan-99/Alpaca-CPPI/blob/main/notebook.ipynb) can be used for backtesting CPPI strategies both with and without
-the drawdown constraint. It also provides various example's of different CPPI settings that was used for the testing, along with the backtest report and chart.
-
-* CPPI without drawdown constraint
-
-   <img src="./img/without_dd.png">
-
-* CPPI with drawdown constraint
-
-   <img src="./img/with_dd.png">
-
-
 ### Trading Strategy
 
 To run the strategy user is need to initialize the algorithm with the risky asset you want to invest in, a safe asset if you have one else it keeps
@@ -43,7 +29,7 @@ from CPPI import CPPI
 r_asset = 'SPY'#risky_asset
 s_asset = None #safe_asset
 capital = 1000
-reblance_freq = 1 #days or daily
+rebalance_freq = 1 #days or daily
 floor_pct = 0.8 #80%
 m = 3 #asset_muliplier
 
@@ -52,7 +38,24 @@ spy_cppi = CPPI(risky_asset=r_asset, cppi_budget=capital, safe_asset=s_asset,
                floor_percent=floor_pct, asset_muliplier=m)
 #start the strategy
 spy_cppi.run(period_in_days=reblance_freq)
+
 ```
+
+
+### Research Notebook
+
+The research [notebook](https://github.com/Harkishan-99/Alpaca-CPPI/blob/main/notebook.ipynb) can be used for backtesting CPPI strategies both with and without
+the drawdown constraint. It also provides various example's of different CPPI settings that was used for the testing, along with the backtest report and chart.
+
+* CPPI without drawdown constraint
+
+   <img src="./img/without_dd.png">
+
+* CPPI with drawdown constraint
+
+   <img src="./img/with_dd.png">
+
+
 ### Disclaimer
 The trading strategy discussed here is for educational purpose only doesn't guarantee to make profit. Trading involves a high risk of losing money.
 Use the code provided here at your own risk. The author and AlpacaDB, Inc. are not responsible for your trading results i.e. any profit or loss caused
