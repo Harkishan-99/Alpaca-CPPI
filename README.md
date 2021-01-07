@@ -18,11 +18,11 @@ the drawdown constraint. It also provides various example's of different CPPI se
 
 * CPPI without drawdown constraint
 
-   <img src="./img/without_dd.png" width="650">
+   <img src="img/without_dd.png" width="650">
 
 * CPPI with drawdown constraint
 
-   <img src="./img/with_dd.png" width="650">
+   <img src="img/with_dd.png" width="650">
 
 
 ### Trading Strategy
