@@ -49,11 +49,11 @@ the drawdown constraint. It also provides various example's of different CPPI se
 
 * CPPI without drawdown constraint
 
-   <img src="./img/without_dd.png">
+   ![CPPI without drawdown constraint](https://github.com/Harkishan-99/Alpaca-CPPI/blob/main/img/without_dd.PNG)
 
 * CPPI with drawdown constraint
 
-   <img src="./img/with_dd.png">
+   ![CPPI with drawdown constraint](https://github.com/Harkishan-99/Alpaca-CPPI/blob/main/img/with_dd.PNG)
 
 
 ### Disclaimer
